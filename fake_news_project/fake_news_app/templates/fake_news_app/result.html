@@ -1,0 +1,128 @@
+<!-- Loading in static contents -->
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Clean Work HTML CSS Template</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link href="{% static 'fake_news_app/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'fake_news_app/css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'fake_news_app/css/tooplate-clean-work.css' %}" rel="stylesheet">
+
+<!--
+
+Tooplate 2132 Clean Work
+
+https://www.tooplate.com/view/2132-clean-work
+
+Free Bootstrap 5 HTML Template
+
+-->
+    </head>
+    
+    <body>
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-house-fill me-2"></i>
+                            Fake News Detection
+                        </p>
+
+                        <p class="d-flex d-lg-block d-md-block d-none me-4 mb-0">
+                            <i class="bi-clock-fill me-2"></i>
+                            <strong class="me-2">Analyze news at any time</strong> 24/7
+                        </p>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <section class="testimonial-section section-padding section-bg">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-white mb-4">News Analysis Result: {{result_}}</h2>
+                    </div>
+                        <form method="POST">{% csrf_token %}
+                            <textarea scroll="none" name="news-text" rows="12" class="form-control" id="volunteer-message" readonly>{{message_}}</textarea>
+                            <br>
+                            <a href="../"><button class="summarize-button" type="button">Back</button></a>                            
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="partners-section">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-12 col-12">
+                            <h4 class="partners-section-title bg-white shadow-lg">Powered by the following technologies</h4>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="partners-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" class="partners-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" class="partners-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" class="partners-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" class="partners-image img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{% static 'fake_news_app/js/jquery.min.js' %}"></script>
+        <script src="{% static 'fake_news_app/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'fake_news_app/js/jquery.backstretch.min.js' %}"></script>
+        <script src="{% static 'fake_news_app/js/counter.js' %}"></script>
+        <script src="{% static 'fake_news_app/js/countdown.js' %}"></script>
+        <script src="{% static 'fake_news_app/js/init.js' %}"></script>
+        <script src="{% static 'fake_news_app/js/modernizr.js' %}"></script>
+        <script src="{% static 'fake_news_app/js/animated-headline.js' %}"></script>
+        <script src="{% static 'fake_news_app/js/custom.js' %}"></script>
+
+    </body>
+</html>
