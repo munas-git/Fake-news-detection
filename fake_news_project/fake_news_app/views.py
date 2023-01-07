@@ -50,9 +50,21 @@ def result_page(request):
 
     if result == 0:
         result = "Fake News"
-        message = """Fake news is false or misleading information presented as news. Fake news often has the aim of damaging the reputation of a person or entity, or making money through advertising revenue.[1][2] Although false news has always been spread throughout history, the term "fake news" was first used in the 1890s when sensational reports in newspapers were common. """
+        message = """What is fake news? it is intentionally misleading or fabricated information presented as if it were real news. It is often spread through social media or other online platforms, and can be harmful because it can mislead people and spread false information. It is important for people to be able to critically evaluate the sources of the information they encounter and to be able to distinguish between reliable sources and fake news.
+
+How to verify your news
+    1. Use me, I am a smart AI that is capable of analyzing any piece of news and returning accurate predictions for you
+    2. Check the source: Is the source of the news a reputable one? Is it known for producing reliable information?
+    3. Look for other sources: Check other sources for same news. It is more likely to be true if multiple reputable sources are reporting it
+    4. Consider the purpose: Is the news trying to sell you something? Is it trying to promote a particular agenda or point of view? This could affect the objectivity of the news."""
     else:
         result = "Real News"
-        message = """This news is true and not misleading. In order to avoid fake news, it is necessary to verify the source and that the content is true. To verify news, you can go onlie to your trusted news service providers or simply make use of this smart AI system to analyze the news."""
+        message = """Real news is accurate, fact-based information that is reported by reliable sources. It is intended to inform the public about events and issues that are important and relevant to society. Real news is typically produced by journalists who follow ethical principles and standards, such as truthfulness, accuracy, fairness, and independence. These principles help to ensure that the information being reported is reliable and trustworthy.
+
+Sources of real news include:
+    1. Newspapers: Many newspapers have a long history of producing accurate and reliable news.
+    2. Television news: Many television news programs are produced by respected organizations and have a reputation for accuracy.
+    3. Radio news: Radio news programs are often produced by respected organizations and can be a good source of real news
+    4. Online news: Online news sources such as websites, apps, and social media accounts run by reputable news organizations"""
 
     return render(request, 'fake_news_app/result.html', {"result_": result, "message_": message})
