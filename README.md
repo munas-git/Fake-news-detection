@@ -1,5 +1,5 @@
-# Information About the Fake News Detection Systsem.
 ##### Project Status: Completed.
+# Project Title: Fake News Detection Systsem.
 
 ## Project Description.
 <p> This AI system is capable fo classify news into two broad categories: Real and Fake news. The data was gotten from <a href= "https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset">Kaggle</a>. Some of the steps involved in the model training include:
