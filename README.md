@@ -2,8 +2,10 @@
 # Project Title: Fake News Detection Systsem.
 
 ## Project Description.
-<p> This AI system is capable fo classify news into two broad categories: Real and Fake news. The data was gotten from <a href= "https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset">Kaggle</a>. Some of the steps involved in the model training include:
-
+<p> This AI system is capable fo classify news into two broad categories: Real and Fake news. The data was gotten from <a href= "https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset">Kaggle</a>. Some of the steps involved in the model training include:   
+  
+  > Download and unzip "news-transformer" <a href= "https://drive.google.com/file/d/1FUKDizSk7PxkBcIiMwcdp2GsErr_9OnP/view?usp=sharing">here</a>
+  
 - Turning texts into lower case.
 - Removal of numbers.
 - Removal of symbols, special characters and white spaces.
